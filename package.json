@@ -3,5 +3,8 @@
     "clean": "rm -rf out/",
     "build": "npm run clean && mkdir -p out/ && cp -r public/* out/",
     "deploy": "npm run build && wrangler pages deploy out --project-name pagemodules"
+  },
+  "dependencies": {
+    "wrangler": "^3.8.0"
   }
 }
